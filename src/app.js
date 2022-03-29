@@ -1,6 +1,6 @@
-let original_div = document.querySelector('section.originals > div')
+let original_div = document.querySelector('section.originals > div > div')
 function copy_function(){
-    console.log('hello')
+    console.log(original_div)
     const copied_area = document.querySelector('div.copy-container')
     copied_area.insertAdjacentHTML("afterbegin",'bruh<br>')
 
