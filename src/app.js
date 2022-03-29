@@ -1,8 +1,16 @@
-let original_div = document.querySelector('section.originals > div > div')
-function copy_function(){
-    console.log(original_div)
+let original_section = document.querySelector('section.originals div')
+function copy_function(target_div){
+    console.log(target_div)
     const copied_area = document.querySelector('div.copy-container')
-    copied_area.insertAdjacentHTML("afterbegin",'bruh<br>')
+    copied_area.insertAdjacentHTML("afterbegin",target_div.textContent+'<br>')
 
 }
-original_div.addEventListener('click',copy_function);
+
+
+original_section.onclick = function(event){
+    let target = event.target;
+
+    if (target.tagname != 'div') console.log('not valid');
+
+    copy_function(target);
+}
