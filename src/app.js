@@ -7,10 +7,10 @@ function copy_function(target_div){
 }
 
 
-original_section.onclick = function(event){
+original_section.addEventListener('click', function(event){
     let target = event.target;
 
     if (target.tagname != 'div') console.log('not valid');
 
     copy_function(target);
-}
+});
