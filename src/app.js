@@ -1,5 +1,5 @@
 ///part 1
-let original_section = document.querySelectorAll('section.originals  div.original-container div')
+let original_section = document.querySelectorAll('section.originals div > div')
 
 
 function copy_function(target_div){
