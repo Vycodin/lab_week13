@@ -1,0 +1,25 @@
+*{
+    color: darkblue;
+}
+body{
+    background-color: rgb(188, 217, 243);
+}
+
+.original-container{
+    width: 150px;
+    border: 1px solid rgb(9, 212, 248);
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.copy-container{
+    width: 150px;
+    border: 1px solid rgb(12, 185, 238);
+    text-align: center;
+    background-color: aliceblue;
+}
+
+button:hover{
+    color: aliceblue;
+    background-color: rgb(172, 112, 221);
+}
